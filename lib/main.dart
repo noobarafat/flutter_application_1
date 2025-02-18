@@ -4,20 +4,28 @@ void main() {
   runApp(const LabClass05());
 }
 
-classLabClass05 extend StatelessWidget{
+class LabClass05 extends StatelessWidget {
   const LabClass05({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
       title: "Basic Flutter UI-02",
       home: Scaffold(
         appBar: AppBar(
           title: Text("Basic Flutter UI-02"),
+          backgroundColor: Colors.blue[400],
+          centerTitle: true,
         ),
-        
-      )
+        body: Center( // Wrap the Text widget with Center to align it
+          child: Text(
+            "Basic Flutter UI - Part 02",
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+        ),
+      ),
     );
-    
   }
 }
