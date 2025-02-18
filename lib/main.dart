@@ -13,8 +13,9 @@ classLabClass05 extend StatelessWidget{
       title: "Basic Flutter UI-02",
       home: Scaffold(
         appBar: AppBar(
-          title: Text(data),
+          title: Text("Basic Flutter UI-02"),
         ),
+        
       )
     );
     
